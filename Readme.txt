@@ -1,12 +1,12 @@
-Put all the files in path. All codes are based on fieldtrip toolbox, therefore add fieldtrip to path as well.
+Put all the files in path. All codes are based on fieldtrip toolbox, therefore add fieldtrip to path as well. Fieldtrip version used by us- fieldtrip-20180829.
 
-1) Timelock_Example: This simulates mixture of gaussian with different SNR values and drifts. It also computes sources based on the covariance of the timelocked response using eLORETA, MNE. and LCMV.
-2) Freqency_Example: This simulates mixture of sinusoidal with different SNR values and power ratios. This also computes sources based on the cross spectral density of the frequency response using eLORETA and DICS.
+1) Timelock_Example: This simulates mixture of gaussian with different SNR values and drifts. It also computes sources based on the covariance of the timelocked response using eLORETA, MNE and LCMV.
+2) Frequency_Example: This simulates mixture of sinusoidal with different SNR values and power ratios. This also computes sources based on the cross spectral density of the frequency response using eLORETA and DICS.
 
 Functions:
 1) fun_simulation: function to simulate sinusoidal or gaussian based on the arguments entered in the data structure 'fun'.
 2) SNR_Gol: SNR computed using equation given in Goldenholz2009.
-3) fun_SL: The function which calls the source localization commands and interpolates it to the T1- MRI.
+3) fun_SL: The function which calls the source localization commands and interpolates it to the T1- MRI. Also computed the topoplot based on either the powerspectrum at 40 Hz or temporal amplitude.
 4) source_zscore: Computes the z scores of all voxels in each hemisphere. Further statistics employed.
 5) coords2surf2: Function to view the computed sources on brain surface.
 
